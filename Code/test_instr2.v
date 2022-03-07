@@ -41,7 +41,7 @@ module test_instr2;
 		// Initialize Inputs
 		clk = 0;
 		
-		file = $fopen("F:\\BITS\\Year 3 Sem 1\\ADV VLSI Arch\\Assignment 2\\test_instr2.txt","r");
+		file = $fopen("test_instr2.txt","r");
 		for(i = 0; ! $feof(file); i=i+4) begin
 			$fscanf(file,"%h\n",{uut.IM.Mem[i+3],uut.IM.Mem[i+2],uut.IM.Mem[i+1],uut.IM.Mem[i]});
 		end
